@@ -17,8 +17,8 @@ This project analyzes the **Chicago Taxi Trips** dataset in Google BigQuery to u
 
 | Name | Role | GitHub |
 |------|------|--------|
-| Karl De Guzman | Data Analyst | [@username](https://github.com/username) |
-| James Illorin | Data Analyst | [@username](https://github.com/username) |
+| Karl De Guzman | Data Analyst | [@username](https://github.com/jameskyle99) |
+| James Illorin | Data Analyst | [@username](https://github.com/karldgzmn) |
 
 ## 📊 Data Source
 
