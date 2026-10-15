@@ -9,18 +9,18 @@
 
 </div>
 
-## 📌 About the Project
+## About the Project
 
 This project analyzes the **Chicago Taxi Trips** dataset in Google BigQuery to uncover patterns in ride demand, fares, tipping behavior, and trip duration across the city — turning millions of rides into business insights.
 
-## 👥 Team Members
+## Team Members
 
 | Name | Role | GitHub |
 |------|------|--------|
 | Karl De Guzman | Data Analyst | [@karldgzmn](https://github.com/karldgzmn) |
 | James Illorin | Data Analyst | [@jameskyle99](https://github.com/jameskyle99) |
 
-## 📊 Data Source
+## Data Source
 
 | | |
 |---|---|
@@ -39,7 +39,7 @@ LIMIT 10;
 <sub>✅ Done · 🔄 In progress · ⏳ Not started</sub>
 
 
-## 🤝 How We Work
+## How We Work
 
 1. Pull the latest changes before you start: `git pull`
 2. Keep commit messages short and clear (e.g. `Add market analysis draft`)
