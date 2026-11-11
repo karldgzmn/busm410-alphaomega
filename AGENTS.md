@@ -1,3 +1,5 @@
+# AGENTS.md
+
 Read this before helping on our project.
 
 - Team: Alpha & Omega (BUSM 410, Team 1). Partners: Karl De Guzman and James Illorin.
