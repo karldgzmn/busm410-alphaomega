@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="900" viewBox="0 0 1500 900" role="img" aria-labelledby="title desc">
+  <title id="title">Recorded tips as a share of fare</title>
+  <desc id="desc">Cash tip rate 0.16 percent compared with 22.37 percent for credit card trips in 2018.</desc>
+  <rect width="1500" height="900" fill="#f7f9fc"/>
+  <text x="110" y="92" font-family="Arial, sans-serif" font-size="38" font-weight="700" fill="#172b4d">Recorded tips as a share of fare</text>
+  <text x="112" y="134" font-family="Arial, sans-serif" font-size="21" fill="#5d6b82">Chicago taxi trips · 2018 · one row per distinct trip key</text>
+
+  <g font-family="Arial, sans-serif" font-size="18" fill="#5d6b82" text-anchor="end">
+    <text x="205" y="691">0%</text><text x="205" y="599">5%</text><text x="205" y="507">10%</text>
+    <text x="205" y="415">15%</text><text x="205" y="323">20%</text><text x="205" y="231">25%</text>
+  </g>
+  <g stroke="#d7e0eb" stroke-width="1">
+    <line x1="235" y1="685" x2="1390" y2="685"/><line x1="235" y1="593" x2="1390" y2="593"/>
+    <line x1="235" y1="501" x2="1390" y2="501"/><line x1="235" y1="409" x2="1390" y2="409"/>
+    <line x1="235" y1="317" x2="1390" y2="317"/><line x1="235" y1="225" x2="1390" y2="225"/>
+  </g>
+  <rect x="395" y="679" width="270" height="6" rx="4" fill="#d97706"/>
+  <rect x="900" y="273" width="270" height="412" rx="9" fill="#2864c5"/>
+  <text x="530" y="651" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#d97706" text-anchor="middle">0.16%</text>
+  <text x="1035" y="255" font-family="Arial, sans-serif" font-size="23" font-weight="700" fill="#2864c5" text-anchor="middle">22.37%</text>
+  <text x="530" y="727" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#172b4d" text-anchor="middle">Cash</text>
+  <text x="1035" y="727" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#172b4d" text-anchor="middle">Credit Card</text>
+
+  <rect x="753" y="166" width="460" height="60" rx="14" fill="#eaf0fa"/>
+  <text x="983" y="204" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#172b4d" text-anchor="middle">22.21 percentage-point difference</text>
+  <text x="110" y="807" font-family="Arial, sans-serif" font-size="17" fill="#5d6b82">Credit-card trips are the within-dataset benchmark. City documentation says cash tips generally are not recorded.</text>
+  <text x="110" y="838" font-family="Arial, sans-serif" font-size="17" fill="#5d6b82">Rates use deduplicated 2018 trips with fare &gt; $0 and a recorded tip.</text>
+</svg>
