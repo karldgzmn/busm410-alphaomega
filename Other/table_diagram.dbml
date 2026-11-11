@@ -1,0 +1,27 @@
+// One source table; the analysis deduplicates repeated unique_key values.
+// No primary key is declared on the raw table because repeated keys were observed.
+Table taxi_trips {
+  unique_key string [not null, note: 'Unique trip identifier; repeated rows were identical on analysis fields in the 2018 check']
+  taxi_id string [not null]
+  trip_start_timestamp timestamp
+  trip_end_timestamp timestamp
+  trip_seconds int
+  trip_miles float
+  pickup_census_tract int
+  dropoff_census_tract int
+  pickup_community_area int
+  dropoff_community_area int
+  fare float
+  tips float
+  tolls float
+  extras float
+  trip_total float
+  payment_type string
+  company string
+  pickup_latitude float
+  pickup_longitude float
+  pickup_location string
+  dropoff_latitude float
+  dropoff_longitude float
+  dropoff_location string
+}
