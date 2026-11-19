@@ -50,7 +50,7 @@ After deduplicating 2018 records, one analysis row represents one distinct `uniq
 | [sql/01_schema.sql](sql/01_schema.sql)–[sql/09_cleaned_tip_rates.sql](sql/09_cleaned_tip_rates.sql) | Numbered, reproducible BigQuery queries |
 | [visuals/gap_chart.png](visuals/gap_chart.png) | Cash and credit-card recorded tip rates |
 | [Other/dataset_documentation.md](Other/dataset_documentation.md) | Dataset source, limits, and relevant field definitions |
-| [Other/table_diagram.dbml](Other/table_diagram.dbml) | DBML diagram for the source table |
+| [Other/table_diagram.dbml](Other/table_diagram.dbml) and [PDF](Other/table_diagram.pdf) | Source table diagram and exported PDF |
 | [Other/audit_protocol.md](Other/audit_protocol.md) | How the agent is directed and checked |
 | [Other/audit_log.md](Other/audit_log.md) | Substantive human checks and their outcomes |
 
