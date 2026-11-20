@@ -20,3 +20,5 @@ The source is `bigquery-public-data.chicago_taxi_trips.taxi_trips`. The comparis
 - Show the rate difference and estimated dollar value with the math and its assumption.
 - Include one chart of the gap and benchmark.
 - Document query steps, duplicate handling, and cleaning choices so the result can be reproduced.
+
+**CP2 data taught us:** 2018 trip-level tip rates contain extreme records (including $0.01 fares paired with large tips; see [query 17](sql/17_cp2_extreme_rate_examples.sql)), so the adjusted model is exploratory and not suitable for business prediction.

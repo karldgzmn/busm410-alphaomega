@@ -40,6 +40,10 @@ LIMIT 10;
 
 After deduplicating 2018 records, one analysis row represents one distinct `unique_key` trip. Recorded cash tips were 0.1605% of cash fares, compared with 22.3715% for credit-card trips, a 22.2110 percentage-point gap. Credit-card trips are the same-year peer benchmark. Applying their tip-to-fare rate to cash fares gives this estimate: `($34,991,372.78 ÷ $156,410,526.65) × $125,091,981.14 − $200,737.49 = $27,784,208.52`. This is potential unrecorded cash tips, not actual cash income. The City says cash tips generally are not recorded ([source](https://data.cityofchicago.org/Transportation/Taxi-Trips-2013-2023-/wrvz-psew)); the amount is calculated from [query 09](sql/09_cleaned_tip_rates.sql). See [findings.md](findings.md) and [sql/README.md](sql/README.md) for details.
 
+## CP2: What is associated with the gap?
+
+The CP2 table has 20,352,588 distinct 2018 trips ([quality check](sql/15_cp2_table_quality.sql)). A linear regression examines recorded trip-level tip-to-fare rates by payment type, company, pickup area, time, miles, and duration. BigQuery's free-storage quota blocked full-table model training, so the model uses a deterministic 10% sample ([training query](sql/22_cp2_train_model_sample.sql)). Its held-out `r2_score` is 0.1024 ([evaluation](sql/23_cp2_model_evaluation.sql)); extreme ratios, including $0.01 fares with large tips ([outlier checks](sql/16_cp2_outcome_extremes.sql), [examples](sql/17_cp2_extreme_rate_examples.sql)), limit the interpretation. The results are exploratory associations, not causes or decision-ready predictions. See the [model card](model/model_card.md) and [SQL process](sql/README.md).
+
 ## Explore the Work
 
 | File | Purpose |
@@ -48,6 +52,8 @@ After deduplicating 2018 records, one analysis row represents one distinct `uniq
 | [findings.md](findings.md) | Measured gap, benchmark, value estimate, and chart |
 | [sql/README.md](sql/README.md) | Query process, cleaning choices, and matching results |
 | [sql/01_schema.sql](sql/01_schema.sql)–[sql/09_cleaned_tip_rates.sql](sql/09_cleaned_tip_rates.sql) | Numbered, reproducible BigQuery queries |
+| [model/model_card.md](model/model_card.md) | CP2 outcome checks, sample model report card, and adjusted coefficients |
+| [sql/10_create_cp2_dataset.sql](sql/10_create_cp2_dataset.sql)–[sql/25_cp2_model_sample_size_check.sql](sql/25_cp2_model_sample_size_check.sql) | CP2 table, Part A checks, model, evaluation, and coefficients |
 | [visuals/gap_chart.png](visuals/gap_chart.png) | Cash and credit-card recorded tip rates |
 | [Other/dataset_documentation.md](Other/dataset_documentation.md) | Dataset source, limits, and relevant field definitions |
 | [Other/table_diagram.dbml](Other/table_diagram.dbml) and [PDF](Other/table_diagram.pdf) | Source table diagram and exported PDF |
